@@ -10,18 +10,21 @@
     <?php 
     $naam = 'Tyrone ';
     $leeftijd = '18 ';
+    $leeftijd2 = (string) $leefttijd;
     $lengte = '1.81 ';
     $woonplaats = 'Leiden';
-    echo $naam;
-    echo $leeftijd;
-    echo $lengte;
-    echo $woonplaats;
+    
+    echo gettype($leeftijd);
+    $leeftijd2 =(string) $leeftijd;
+
+    echo gettype($leeftijd);
+    echo $leeftijd2;
+
     ?>
 
     <?php 
     echo "Ik ben ".$naam."ik ben ".$leeftijd.'jaar '."oud en ben ".$lengte.'m lang ';
     echo sprintf('ik ben %s ik ben %s en ben %s m lang en ik woon in %s.', $naam, $leeftijd, $lengte, $woonplaats);
-    
     ?>
 
     <img src="assets/img/logo.png"/>
