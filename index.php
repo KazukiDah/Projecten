@@ -11,13 +11,16 @@
     $naam = 'Tyrone ';
     $leeftijd = '18 ';
     $lengte = '1.81 ';
+    $woonplaats = 'Leiden';
     echo $naam;
     echo $leeftijd;
     echo $lengte;
+    echo $woonplaats;
     ?>
 
     <?php 
     echo "Ik ben ".$naam."ik ben ".$leeftijd.'jaar '."oud en ben ".$lengte.'m lang ';
+    echo sprintf('ik ben %s ik ben %s en ben %s m lang en ik woon in %s.', $naam, $leeftijd, $lengte, $woonplaats);
     
     ?>
 
